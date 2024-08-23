@@ -5,10 +5,44 @@
 
 }
 
-#box1, #box2, #box3{
+#box1, #box2, #box3, #box4, #char-container {
 	height: 200px;
 	width: 200px;
 	font-size: 100px;
 	border-radius: 10px;
 	margin: 30px;
+}
+#char-container {
+	background-color: white;
+	font-size: 100px;
+	text-align: center;
+	width: 200px;
+	height: 200px;
+	line-height: 200px;
+	margin: 15px auto;
+	position: relative;
+	border-radius: 10px;
+	border-style: solid;
+}
+
+.char {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	font-size: 100px;
+}
+
+.minibox:hover{
+	transform: scale(1.2);
+	/* filter: brightness(0.8) contrast(0.8); */
+	background-color: rgb(157, 157, 157);
+}
+
+#result{
+	font-size: xx-large;
+	text-align: center;
+	margin: 50px;
 }

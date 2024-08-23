@@ -5,13 +5,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="Stylesheet" href="styles.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
 </head>
 <body>
 	<div id="mainbox">
-		<button id="box1">✊🏻</button>
-		<button id="box2">✌🏻</button >
-		<button id="box3">✋🏻</button>
+		<button class="minibox" id="box1" value="✊🏻">✊🏻</button>
+		<button class="minibox" id="box2" value="✌🏻">✌🏻</button >
+		<button class="minibox" id="box3" value="✋🏻">✋🏻</button>
 	</div>
+	<div id="char-container">
+		<div class="char">✊🏻</div>
+		<div class="char">✋🏻</div>
+		<div class="char">✌🏻</div>
+		<div id="empty" ></div>
+	</div>
+	<div id="result"></div>
 	<script src="rps_script.js"></script>
+	<!-- <script>    gsap.to("#box1", { x: 100, duration: 2 });
+	</script> -->
 </body>
 </html>
